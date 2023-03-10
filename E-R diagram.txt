@@ -1,0 +1,47 @@
+                   +-----------------+ 
+                   |     PERSON      | 
+                   +-----------------+ 
+                   | id              | 
+                   | name            | 
+                   | email           | 
+                   | password        | 
+                   | created_at      | 
+                   | updated_at      | 
+                   +-----------------+ 
+                                ^ 
+                                 | 
+               +-------------+------------+ 
+               |                          | 
++--------------+------------------+  +--------------+--------------+ 
+|          STUDENT                       |  |           TEACHER            | 
++--------------    +--------------   +  +--------------+--------------+ 
+| id                      |  id                    |  | id                   | id           | 
+| person_id      |  person_id    |  | person_id    | person_id    | 
+| created_at     |  created_at   |  | created_at   | created_at   | 
+| updated_at   |  updated_at  |  | updated_at  | updated_at   | 
++--------------   +--------------    +  +--------------  +--------------+ 
+                             ^ 
+                             | 
+                   +---------+--------+ 
+                   |      CLASS      | 
+                   +---------+--------+ 
+                   | id              | 
+                   | teacher_id      | 
+                   | name            | 
+                   | description     | 
+                   | start_time      | 
+                   | end_time        | 
+                   | created_at      | 
+                   | updated_at      | 
+                   +-----------------+ 
+                             ^ 
+                             | 
+                   +---------+--------+ 
+                   |  STUDENT_CLASS  | 
+                   +---------+--------+ 
+                   | id              | 
+                   | student_id      | 
+                   | class_id        | 
+                   | created_at      | 
+                   | updated_at      | 
+                   +-----------------+
