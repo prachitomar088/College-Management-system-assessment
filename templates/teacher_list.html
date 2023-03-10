@@ -1,0 +1,10 @@
+
+
+{% block content %}
+    <h1>Teacher List</h1>
+    <ul>
+        {% for teacher in teachers %}
+            <li>{{ teacher.name }} - {{ teacher.subject }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,33 @@
+
+
+{% block content %}
+  <h1>Teacher Signup</h1>
+  <form method="POST">
+    {% csrf_token %}
+    <div>
+      <label>Username:</label>
+      <input type="text" name="username">
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password">
+    </div>
+    <div>
+      <label>Name:</label>
+      <input type="text" name="name">
+    </div>
+    <div>
+      <label>Subject:</label>
+      <input type="text" name="subject">
+    </div>
+    <div>
+      <label>Phone number:</label>
+      <input type="tel" name="phone_number">
+    </div>
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+    <input type="submit" value="Signup">
+  </form>
+{% endblock %}
